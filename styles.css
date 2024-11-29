@@ -142,13 +142,26 @@ h2 {
   text-align: center;
 }
 
-/* Barra de progreso */
+/* Barra de progreso con animación en loop */
 #revenue-bar {
   width: 0%;
   height: 20px;
   background-color: #FF5722;
   margin-top: 15px;
-  transition: width 2s ease-out; /* Animación suave */
+  animation: increaseBar 3s ease-in-out infinite;
+}
+
+/* Animación de incremento de la barra de progreso */
+@keyframes increaseBar {
+  0% {
+      width: 0%;
+  }
+  50% {
+      width: 80%;
+  }
+  100% {
+      width: 100%;
+  }
 }
 
 /* Estilo para el número de ingresos */
@@ -156,4 +169,18 @@ h2 {
   font-size: 2em;
   color: #FF5722;
   font-weight: bold;
+  animation: numberIncrement 3s steps(6) infinite;
+}
+
+/* Animación de incremento numérico */
+@keyframes numberIncrement {
+  0% {
+      content: "0";
+  }
+  50% {
+      content: "7500"; /* Número intermedio */
+  }
+  100% {
+      content: "15000"; /* Número final */
+  }
 }
