@@ -1,14 +1,20 @@
 {
-  "name": "Mi Simple PWA",
-  "short_name": "Simple PWA",
+  "name": "Simple Orange",
+  "short_name": "Orange",
+  "description": "Un eBook sobre el uso de ChatGPT para mejorar tu negocio.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#000000",
+  "background_color": "#ff7f00",
+  "theme_color": "#ff5722",
   "icons": [
     {
-      "src": "icon-192x192.png",
+      "src": "images/icon-192x192.png",
       "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icon-512x512.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ]
