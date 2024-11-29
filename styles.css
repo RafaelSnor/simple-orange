@@ -77,26 +77,24 @@ header h1 {
   color: #333;
 }
 
-.testimonials {
-  margin: 40px auto;
-  width: 80%;
-}
-
-.testimonial {
-  background-color: #f8f8f8;
-  border-left: 4px solid #FF5722;
-  margin: 20px 0;
-  padding: 20px;
-}
-
-footer {
-  background-color: #FF5722;
+/* Estilos específicos para la caja de pregunta y respuesta */
+#chatgpt-response {
+  background-color: black;
   color: white;
-  padding: 20px;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 8px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  font-family: 'Courier New', Courier, monospace;
+  white-space: pre-wrap; /* Para mostrar los saltos de línea */
 }
 
-footer p {
+#response-text {
   font-size: 1em;
+  line-height: 1.6;
 }
 
 /* Media Queries para móviles */

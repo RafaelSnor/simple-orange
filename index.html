@@ -23,7 +23,10 @@
             <h2>Ejemplo de Pregunta y Respuesta de ChatGPT</h2>
             <div class="example-box">
                 <p><strong>Pregunta:</strong> ¿Cómo calcular el impuesto a la renta?</p>
-                <p><strong>Respuesta:</strong> El cálculo del impuesto a la renta varía según el país, pero generalmente se determina multiplicando los ingresos netos por una tasa impositiva establecida por las autoridades fiscales. Asegúrate de conocer las deducciones y exenciones aplicables en tu jurisdicción.</p>
+                <div id="chatgpt-response">
+                    <strong>Respuesta:</strong>
+                    <p id="response-text"></p>
+                </div>
             </div>
         </div>
 
@@ -68,6 +71,19 @@
                 document.getElementById("countdown").innerHTML = "La oferta ha expirado";
             }
         }, 1000);
+
+        // Función para emular el efecto de tipeo
+        const responseText = "El cálculo del impuesto a la renta varía según el país, pero generalmente se determina multiplicando los ingresos netos por una tasa impositiva establecida por las autoridades fiscales. Asegúrate de conocer las deducciones y exenciones aplicables en tu jurisdicción.";
+        let i = 0;
+        const speed = 50; // Milisegundos entre cada letra
+        function typeWriter() {
+            if (i < responseText.length) {
+                document.getElementById("response-text").innerHTML += responseText.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+        window.onload = typeWriter;
     </script>
 
 </body>
