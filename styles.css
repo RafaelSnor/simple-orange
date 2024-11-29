@@ -164,23 +164,66 @@ h2 {
   }
 }
 
-/* Estilo para el número de ingresos */
-#revenue-number {
-  font-size: 2em;
-  color: #FF5722;
-  font-weight: bold;
-  animation: numberIncrement 3s steps(6) infinite;
+/* Contenedor de barras */
+.bars-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 200px;
+  margin-top: 20px;
 }
 
-/* Animación de incremento numérico */
-@keyframes numberIncrement {
+/* Estilo básico de las barras */
+.bar {
+  width: 20px;
+  background-color: #FF5722;
+  margin: 0 5px;
+  animation: grow 2s ease-in-out infinite;
+  height: 0;
+}
+
+/* Animación para el crecimiento de las barras */
+@keyframes grow {
   0% {
-      content: "0";
+      height: 0;
+  }
+  25% {
+      height: 70%;
   }
   50% {
-      content: "7500"; /* Número intermedio */
+      height: 100%;
+  }
+  75% {
+      height: 70%;
   }
   100% {
-      content: "15000"; /* Número final */
+      height: 0;
   }
 }
+
+/* Diferentes tiempos de animación para cada barra */
+#bar1 {
+  animation-duration: 2s;
+  animation-delay: 0s;
+}
+
+#bar2 {
+  animation-duration: 2.5s;
+  animation-delay: 0.2s;
+}
+
+#bar3 {
+  animation-duration: 3s;
+  animation-delay: 0.4s;
+}
+
+#bar4 {
+  animation-duration: 3.5s;
+  animation-delay: 0.6s;
+}
+
+#bar5 {
+  animation-duration: 4s;
+  animation-delay: 0.8s;
+}
+
