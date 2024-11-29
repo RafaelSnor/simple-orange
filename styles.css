@@ -15,6 +15,17 @@ body {
   padding: 0;
 }
 
+/* Mejorar el tamaño del campo de entrada */
+input[type="email"] {
+  width: 100%; /* Hace que ocupe todo el ancho disponible */
+  padding: 12px; /* Aumenta el relleno interno para hacerlo más grande */
+  font-size: 16px; /* Aumenta el tamaño de la fuente */
+  border: 2px solid #ccc; /* Bordes del campo */
+  border-radius: 8px; /* Bordes redondeados */
+  margin-top: 10px; /* Separación desde el texto */
+  box-sizing: border-box; /* Asegura que el padding no se desborde */
+}
+
 .container {
   width: 90%;
   max-width: 1200px;
