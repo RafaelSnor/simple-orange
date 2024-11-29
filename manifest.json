@@ -1,10 +1,10 @@
 {
-  "name": "Simple Orange",
-  "short_name": "Orange",
-  "description": "Un eBook sobre el uso de ChatGPT para mejorar tu negocio.",
+  "name": "Simple Orange - eBook ChatGPT",
+  "short_name": "Simple Orange",
+  "description": "Descarga el eBook gratuito sobre el uso de ChatGPT para mejorar tu negocio.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ff7f00",
+  "background_color": "#ff5722",
   "theme_color": "#ff5722",
   "icons": [
     {
