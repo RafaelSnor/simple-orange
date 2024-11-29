@@ -1,47 +1,136 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Descarga el eBook sobre el uso de ChatGPT para mejorar tu negocio.">
-  <title>Simple Orange - eBook ChatGPT</title>
-  <link rel="icon" href="images/icon-192x192.png">
-  <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vende tu Ebook sobre ChatGPT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #FF5722;
+            color: white;
+            padding: 50px;
+        }
+        header h1 {
+            font-size: 36px;
+        }
+        .cta-button {
+            background-color: #FF5722;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .cta-button:hover {
+            background-color: #e64a19;
+        }
+        .hero-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+        }
+        section {
+            padding: 30px;
+        }
+        .testimonial {
+            background-color: #fff;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .testimonial p {
+            font-style: italic;
+        }
+        .countdown {
+            font-size: 24px;
+            font-weight: bold;
+            color: #FF5722;
+        }
+        input[type="email"] {
+            padding: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
+            .cta-button {
+                font-size: 14px;
+                padding: 12px 25px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <!-- Banner de la página -->
-  <header>
-    <div class="hero">
-      <img src="images/hero.jpg" alt="ChatGPT eBook" class="hero-image">
-      <div class="hero-text">
-        <h1>¡Descubre el Poder de ChatGPT en Tu Negocio!</h1>
-        <p>Descarga nuestro eBook gratuito y aprende cómo aplicar ChatGPT para mejorar la productividad y la eficiencia.</p>
-        <a href="ebook.pdf" class="download-button" download>Descargar eBook Gratis</a>
-      </div>
-    </div>
-  </header>
-  
-  <!-- Información adicional y testimonios -->
-  <section class="info">
-    <h2>¿Por qué ChatGPT?</h2>
-    <p>ChatGPT es una herramienta poderosa que puede transformar tu manera de trabajar, desde la automatización de tareas hasta el análisis de datos.</p>
-  </section>
 
-  <section class="testimonials">
-    <h3>Lo que dicen nuestros usuarios:</h3>
-    <div class="testimonial">
-      <p>"¡Una lectura imprescindible! Ahora puedo automatizar tareas de atención al cliente con facilidad." - Ana, emprendedora</p>
-    </div>
-    <div class="testimonial">
-      <p>"El eBook me ha enseñado a integrar ChatGPT en mis operaciones diarias. ¡Totalmente recomendable!" - Luis, consultor de negocios</p>
-    </div>
-  </section>
+    <header>
+        <h1>Domina el Uso de ChatGPT para Tu Negocio</h1>
+        <img src="https://via.placeholder.com/1500x600" alt="Ebook ChatGPT" class="hero-image">
+    </header>
 
-  <footer>
-    <p>&copy; 2024 Simple Orange. Todos los derechos reservados.</p>
-  </footer>
+    <main>
+        <section>
+            <p>Descubre cómo usar ChatGPT para mejorar la productividad y optimizar procesos en tu negocio. ¡Aprende los secretos del uso efectivo de esta poderosa herramienta!</p>
+            <button class="cta-button" onclick="window.location.href='https://github.com/RafaelSnor/simple-orange'">Comprar Ebook</button>
+        </section>
 
-  <script src="script.js"></script>
+        <section>
+            <h2>Lo que dicen nuestros lectores</h2>
+            <div class="testimonial">
+                <p>"Este ebook me ayudó a entender cómo aplicar ChatGPT en mi estrategia de marketing digital. ¡Totalmente recomendado!" - Juan Pérez</p>
+            </div>
+            <div class="testimonial">
+                <p>"Increíble contenido y fácil de aplicar. Perfecto para cualquier persona que quiera mejorar la eficiencia en su negocio." - María López</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Obtén una muestra gratuita</h2>
+            <p>Suscríbete a nuestro boletín y recibe un capítulo exclusivo gratis del ebook "Domina ChatGPT".</p>
+            <input type="email" placeholder="Ingresa tu correo" required>
+            <button class="cta-button">Obtener Capítulo Gratis</button>
+        </section>
+
+        <section>
+            <h2>¡Oferta por tiempo limitado!</h2>
+            <p>Compra el ebook ahora con un 20% de descuento. Oferta válida hasta:</p>
+            <div id="countdown" class="countdown"></div>
+        </section>
+
+    </main>
+
+    <script>
+        var countDownDate = new Date("Dec 31, 2024 23:59:59").getTime();
+        var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "La oferta ha expirado";
+            }
+        }, 1000);
+    </script>
+
 </body>
 </html>
