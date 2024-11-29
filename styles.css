@@ -5,6 +5,37 @@
   box-sizing: border-box;
 }
 
+.chatgpt-example {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+.chatgpt-example h2 {
+  color: #FF5722;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.example-box {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.example-box p {
+  margin: 10px 0;
+  font-size: 1em;
+}
+
+.example-box strong {
+  color: #333;
+}
+
+
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #fff;
@@ -87,33 +118,4 @@ footer p {
   .hero p {
     font-size: 1em;
   }
-}
-.chatgpt-example {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-top: 30px;
-}
-
-.chatgpt-example h2 {
-  color: #FF5722;
-  font-size: 1.5em;
-  margin-bottom: 15px;
-}
-
-.example-box {
-  background-color: #ffffff;
-  border: 1px solid #e0e0e0;
-  padding: 15px;
-  border-radius: 8px;
-}
-
-.example-box p {
-  margin: 10px 0;
-  font-size: 1em;
-}
-
-.example-box strong {
-  color: #333;
 }
