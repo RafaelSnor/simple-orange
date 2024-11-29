@@ -15,20 +15,39 @@ body {
   padding: 0;
 }
 
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 header {
   background-color: #FF5722;
   color: white;
-  padding: 50px;
+  padding: 50px 0;
+  text-align: center;
 }
 
 header h1 {
   font-size: 36px;
+  margin-bottom: 20px;
 }
 
 .hero-image {
   width: 100%;
   height: auto;
-  margin-top: 20px;
+}
+
+.cta-section, .chatgpt-example, .testimonial-section, .free-sample-section, .offer-section {
+  background-color: #fff;
+  padding: 50px 0;
+  margin-top: 30px;
+}
+
+.cta-section p, .free-sample-section p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
 }
 
 .cta-button {
@@ -40,44 +59,29 @@ header h1 {
   text-transform: uppercase;
   font-size: 16px;
   cursor: pointer;
-  text-decoration: none;
 }
 
 .cta-button:hover {
   background-color: #e64a19;
 }
 
-.chatgpt-example {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-top: 30px;
-}
-
-.chatgpt-example h2 {
+h2 {
   color: #FF5722;
-  font-size: 1.5em;
+  font-size: 2em;
   margin-bottom: 15px;
 }
 
-.example-box {
-  background-color: #ffffff;
-  border: 1px solid #e0e0e0;
+.testimonial {
+  margin-top: 20px;
   padding: 15px;
+  background-color: #f0f0f0;
   border-radius: 8px;
 }
 
-.example-box p {
-  margin: 10px 0;
-  font-size: 1em;
+.testimonial p {
+  font-style: italic;
 }
 
-.example-box strong {
-  color: #333;
-}
-
-/* Estilos específicos para la caja de pregunta y respuesta */
 #chatgpt-response {
   background-color: black;
   color: white;
@@ -89,25 +93,34 @@ header h1 {
   margin-right: auto;
   text-align: left;
   font-family: 'Courier New', Courier, monospace;
-  white-space: pre-wrap; /* Para mostrar los saltos de línea */
+  white-space: pre-wrap;
 }
 
 #response-text {
-  font-size: 1em;
+  font-size: 1.1em;
   line-height: 1.6;
 }
 
-/* Media Queries para móviles */
+.countdown {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #FF5722;
+}
+
 @media screen and (max-width: 768px) {
   header h1 {
     font-size: 1.8em;
   }
 
-  .hero-image {
-    width: 100%;
-  }
-
   .cta-button {
     padding: 12px 25px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .container {
+    width: 95%;
   }
 }

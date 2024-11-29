@@ -9,53 +9,66 @@
 <body>
 
     <header>
-        <h1>Domina el Uso de ChatGPT para Tu Negocio</h1>
-        <img src="https://via.placeholder.com/1500x600" alt="Ebook ChatGPT" class="hero-image">
+        <div class="container">
+            <h1>Domina el Uso de ChatGPT para Tu Negocio</h1>
+            <img src="https://via.placeholder.com/1500x600" alt="Ebook ChatGPT" class="hero-image">
+        </div>
     </header>
 
     <main>
-        <section>
-            <p>Descubre cómo usar ChatGPT para mejorar la productividad y optimizar procesos en tu negocio. ¡Aprende los secretos del uso efectivo de esta poderosa herramienta!</p>
-            <button class="cta-button" onclick="window.location.href='https://github.com/RafaelSnor/simple-orange'">Comprar Ebook</button>
+        <section class="cta-section">
+            <div class="container">
+                <p>Descubre cómo usar ChatGPT para mejorar la productividad y optimizar procesos en tu negocio. ¡Aprende los secretos del uso efectivo de esta poderosa herramienta!</p>
+                <button class="cta-button" onclick="window.location.href='https://github.com/RafaelSnor/simple-orange'">Comprar Ebook</button>
+            </div>
         </section>
 
-        <div class="chatgpt-example">
-            <h2>Ejemplo de Pregunta y Respuesta de ChatGPT</h2>
-            <div class="example-box">
-                <p><strong>Pregunta:</strong> ¿Cómo calcular el impuesto a la renta?</p>
-                <div id="chatgpt-response">
-                    <strong>Respuesta:</strong>
-                    <p id="response-text"></p>
+        <section class="chatgpt-example">
+            <div class="container">
+                <h2>Ejemplo de Pregunta y Respuesta de ChatGPT</h2>
+                <div class="example-box">
+                    <p><strong>Pregunta:</strong> ¿Cómo calcular el impuesto a la renta?</p>
+                    <div id="chatgpt-response">
+                        <strong>Respuesta:</strong>
+                        <p id="response-text"></p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <section>
-            <h2>Lo que dicen nuestros lectores</h2>
-            <div class="testimonial">
-                <p>"Este ebook me ayudó a entender cómo aplicar ChatGPT en mi estrategia de marketing digital. ¡Totalmente recomendado!" - Juan Pérez</p>
-            </div>
-            <div class="testimonial">
-                <p>"Increíble contenido y fácil de aplicar. Perfecto para cualquier persona que quiera mejorar la eficiencia en su negocio." - María López</p>
+        <section class="testimonial-section">
+            <div class="container">
+                <h2>Lo que dicen nuestros lectores</h2>
+                <div class="testimonial">
+                    <p>"Este ebook me ayudó a entender cómo aplicar ChatGPT en mi estrategia de marketing digital. ¡Totalmente recomendado!" - Juan Pérez</p>
+                </div>
+                <div class="testimonial">
+                    <p>"Increíble contenido y fácil de aplicar. Perfecto para cualquier persona que quiera mejorar la eficiencia en su negocio." - María López</p>
+                </div>
             </div>
         </section>
 
-        <section>
-            <h2>Obtén una muestra gratuita</h2>
-            <p>Suscríbete a nuestro boletín y recibe un capítulo exclusivo gratis del ebook "Domina ChatGPT".</p>
-            <input type="email" placeholder="Ingresa tu correo" required>
-            <button class="cta-button">Obtener Capítulo Gratis</button>
+        <section class="free-sample-section">
+            <div class="container">
+                <h2>Obtén una muestra gratuita</h2>
+                <p>Suscríbete a nuestro boletín y recibe un capítulo exclusivo gratis del ebook "Domina ChatGPT".</p>
+                <input type="email" placeholder="Ingresa tu correo" required>
+                <button class="cta-button">Obtener Capítulo Gratis</button>
+            </div>
         </section>
 
-        <section>
-            <h2>¡Oferta por tiempo limitado!</h2>
-            <p>Compra el ebook ahora con un 20% de descuento. Oferta válida hasta:</p>
-            <div id="countdown" class="countdown"></div>
+        <section class="offer-section">
+            <div class="container">
+                <h2>¡Oferta por tiempo limitado!</h2>
+                <p>Compra el ebook ahora con un 20% de descuento. Oferta válida hasta:</p>
+                <div id="countdown" class="countdown"></div>
+            </div>
         </section>
 
     </main>
 
     <script>
+        // Función para el contador de tiempo
         var countDownDate = new Date("Dec 31, 2024 23:59:59").getTime();
         var x = setInterval(function() {
             var now = new Date().getTime();
