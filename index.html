@@ -48,20 +48,6 @@
             </div>
         </section>
 
-        <section>
-          <h2>Estadísticas en crecimiento</h2>
-          <div class="bars-container">
-              <div class="bar" id="bar1"></div>
-              <div class="bar" id="bar2"></div>
-              <div class="bar" id="bar3"></div>
-              <div class="bar" id="bar4"></div>
-              <div class="bar" id="bar5"></div>
-          </div>
-      </section>
-      
-      
-      
-
         <section class="free-sample-section">
             <div class="container">
                 <h2>Obtén una muestra gratuita</h2>
@@ -112,42 +98,6 @@
         }
         window.onload = typeWriter;
     
-        document.addEventListener("DOMContentLoaded", function() {
-    let revenueNumber = document.getElementById("revenue-number");
-    let revenueBar = document.getElementById("revenue-bar");
-    
-    let finalRevenue = 15000; // Ingresos objetivo
-    let currentRevenue = 0;
-    let increment = finalRevenue / 100; // Incremento por paso
-
-    document.addEventListener("DOMContentLoaded", function() {
-    let revenueNumber = document.getElementById("revenue-number");
-    let revenueBar = document.getElementById("revenue-bar");
-    
-    let finalRevenue = 15000; // Ingresos objetivo
-    let currentRevenue = 0;
-    let increment = finalRevenue / 100; // Incremento por paso
-    let direction = 1; // Variable para saber si estamos incrementando o decrementando
-    
-    // Función para incrementar o decrementar el número
-    let increaseRevenue = setInterval(function() {
-        if (currentRevenue < finalRevenue && direction === 1) {
-            currentRevenue += increment;
-            revenueNumber.textContent = Math.floor(currentRevenue).toLocaleString();
-            revenueBar.style.width = (currentRevenue / finalRevenue) * 100 + '%';
-        } else if (currentRevenue > 0 && direction === -1) {
-            currentRevenue -= increment;
-            revenueNumber.textContent = Math.floor(currentRevenue).toLocaleString();
-            revenueBar.style.width = (currentRevenue / finalRevenue) * 100 + '%';
-        }
-
-        if (currentRevenue >= finalRevenue) {
-            direction = -1; // Cambiar dirección para decrementar
-        } else if (currentRevenue <= 0) {
-            direction = 1; // Cambiar dirección para incrementar
-        }
-    }, 30); // 30 ms por incremento
-});
 
     </script>
 
