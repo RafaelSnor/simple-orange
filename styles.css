@@ -135,3 +135,25 @@ h2 {
     width: 95%;
   }
 }
+
+/* Contenedor de ingresos */
+#revenue-container {
+  margin: 20px;
+  text-align: center;
+}
+
+/* Barra de progreso */
+#revenue-bar {
+  width: 0%;
+  height: 20px;
+  background-color: #FF5722;
+  margin-top: 15px;
+  transition: width 2s ease-out; /* Animación suave */
+}
+
+/* Estilo para el número de ingresos */
+#revenue-number {
+  font-size: 2em;
+  color: #FF5722;
+  font-weight: bold;
+}
